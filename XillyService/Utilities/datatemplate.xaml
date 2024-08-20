@@ -1,0 +1,27 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel" xmlns:view="clr-namespace:Page_Navigation_App.View">
+	<DataTemplate
+		DataType="{x:Type vm:HomeVM}"
+		x:Key="{DataTemplateKey {x:Type vm:HomeVM}}">
+		<view:Home />
+	</DataTemplate>
+	<DataTemplate
+		DataType="{x:Type vm:CustomerVM}"
+		x:Key="{DataTemplateKey {x:Type vm:CustomerVM}}">
+		<view:Customers />
+	</DataTemplate>
+	<DataTemplate
+		DataType="{x:Type vm:ProductVM}"
+		x:Key="{DataTemplateKey {x:Type vm:ProductVM}}">
+		<view:Products />
+	</DataTemplate>
+	<DataTemplate
+		DataType="{x:Type vm:OrderVM}"
+		x:Key="{DataTemplateKey {x:Type vm:OrderVM}}">
+		<view:Orders />
+	</DataTemplate>
+	<DataTemplate
+		DataType="{x:Type vm:SettingVM}"
+		x:Key="{DataTemplateKey {x:Type vm:SettingVM}}">
+		<view:Settings />
+	</DataTemplate>
+</ResourceDictionary>

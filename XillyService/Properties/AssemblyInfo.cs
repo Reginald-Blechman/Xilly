@@ -1,0 +1,31 @@
+﻿using System;
+using System.Diagnostics;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
+using System.Windows;
+using System.Windows.Resources;
+
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)]
+[assembly: AssemblyAssociatedContentFile("images/pccheckup.png")]
+[assembly: AssemblyAssociatedContentFile("images/cpo.png")]
+[assembly: AssemblyAssociatedContentFile("images/img_setting.png")]
+[assembly: AssemblyAssociatedContentFile("images/apo.png")]
+[assembly: AssemblyAssociatedContentFile("images/img_transaction.png")]
+[assembly: AssemblyAssociatedContentFile("images/order_page.png")]
+[assembly: AssemblyAssociatedContentFile("images/product_page.png")]
+[assembly: AssemblyAssociatedContentFile("images/settings.png")]
+[assembly: AssemblyAssociatedContentFile("images/shipment_page.png")]
+[assembly: AssemblyAssociatedContentFile("images/shutdown_def.png")]
+[assembly: AssemblyAssociatedContentFile("images/shutdown_mo.png")]
+[assembly: AssemblyAssociatedContentFile("images/home.png")]
+[assembly: AssemblyAssociatedContentFile("untitled-1.ico")]
+[assembly: AssemblyCompany("XillyService")]
+[assembly: AssemblyConfiguration("Debug")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyInformationalVersion("1.0.0")]
+[assembly: AssemblyProduct("XillyService")]
+[assembly: AssemblyTitle("XillyService")]
+[assembly: TargetPlatform("Windows7.0")]
+[assembly: SupportedOSPlatform("Windows7.0")]

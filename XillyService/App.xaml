@@ -1,0 +1,27 @@
+<windows:Application
+	x:Class="Page_Navigation_App.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Page_Navigation_App" xmlns:windows="clr-namespace:System.Windows;assembly=PresentationFramework">
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary
+					Source="Styles/Page.xaml" />
+				<ResourceDictionary
+					Source="Styles/Image.xaml" />
+				<ResourceDictionary
+					Source="Styles/Text.xaml" />
+				<ResourceDictionary
+					Source="Styles/Button.xaml" />
+				<ResourceDictionary
+					Source="Utilities/DataTemplate.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Cyan.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Cyan.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+</windows:Application>

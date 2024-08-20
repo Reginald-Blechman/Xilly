@@ -1,0 +1,126 @@
+<windows:Window
+	x:Class="Page_Navigation_App.MainWindow" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel" xmlns:Menu="clr-namespace:Page_Navigation_App.Utilities"
+	Title="MainWindow"
+	Height="600"
+	Width="850"
+	AllowsTransparency="True"
+	WindowStartupLocation="CenterScreen"
+	WindowStyle="None"
+	Background="#00FFFFFF" xmlns:page_navigation_app="clr-namespace:Page_Navigation_App" xmlns:windows="clr-namespace:System.Windows;assembly=PresentationFramework"
+	MouseDown="Window_MouseDown">
+	<FrameworkElement.DataContext>
+		<vm:NavigationVM />
+	</FrameworkElement.DataContext>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition
+				Width="416*" />
+			<ColumnDefinition
+				Width="9*" />
+		</Grid.ColumnDefinitions>
+		<Border
+			Background="#212529"
+			CornerRadius="20"
+			Grid.ColumnSpan="2" />
+		<Grid
+			ColumnSpan="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition
+					Width="228" />
+				<ColumnDefinition
+					Width="622" />
+			</Grid.ColumnDefinitions>
+			<Grid
+				HorizontalAlignment="Left"
+				Width="228">
+				<Border
+					Background="#272B2F"
+					CornerRadius="20,0,0,20" />
+				<StackPanel
+					Height="400"
+					Width="228">
+					<Menu:Btn
+						Style="{StaticResource BtnStyle}"
+						IsChecked="True"
+						Cursor="Hand"
+						Command="{Binding HomeCommand}">
+						<Grid>
+							<Image
+								Source="Images/Home.png"
+								Style="{StaticResource Image_Style}" />
+							<TextBlock
+								Text="Home"
+								Style="{StaticResource Text_Style}" />
+						</Grid>
+					</Menu:Btn>
+					<Menu:Btn
+						Style="{StaticResource BtnStyle}"
+						Cursor="Hand"
+						Command="{Binding CustomersCommand}">
+						<Grid>
+							<Image
+								Source="Images/APO.png"
+								Style="{StaticResource Image_Style}" />
+							<TextBlock
+								Text="APO"
+								Style="{StaticResource Text_Style}" />
+						</Grid>
+					</Menu:Btn>
+					<Menu:Btn
+						Style="{StaticResource BtnStyle}"
+						Cursor="Hand"
+						Command="{Binding ProductsCommand}">
+						<Grid>
+							<Image
+								Source="Images/CPO.png"
+								Style="{StaticResource Image_Style}" />
+							<TextBlock
+								Text="CPO"
+								Style="{StaticResource Text_Style}" />
+						</Grid>
+					</Menu:Btn>
+					<Menu:Btn
+						Style="{StaticResource BtnStyle}"
+						Cursor="Hand"
+						Command="{Binding OrdersCommand}">
+						<Grid>
+							<Image
+								Source="Images/PCCheckUP.png"
+								Style="{StaticResource Image_Style}"
+								HorizontalAlignment="Left"
+								Margin="23,0,0,0" />
+							<TextBlock
+								Text="PC Check-Up"
+								Style="{StaticResource Text_Style}" />
+						</Grid>
+					</Menu:Btn>
+					<Menu:Btn
+						Style="{StaticResource BtnStyle}"
+						Cursor="Hand"
+						Command="{Binding SettingsCommand}">
+						<Grid>
+							<Image
+								Source="Images/SETTINGS.png"
+								Style="{StaticResource Image_Style}" />
+							<TextBlock
+								Text="Add-ons"
+								Style="{StaticResource Text_Style}" />
+						</Grid>
+					</Menu:Btn>
+				</StackPanel>
+			</Grid>
+			<Grid
+				Column="1">
+				<ContentControl
+					Name="Pages"
+					Content="{Binding CurrentView}" />
+			</Grid>
+		</Grid>
+		<Button
+			Name="CloseApp"
+			Style="{StaticResource ExitApp}"
+			Grid.ColumnSpan="2"
+			Cursor="Hand"
+			Click="CloseApp_Click" />
+	</Grid>
+</windows:Window>
